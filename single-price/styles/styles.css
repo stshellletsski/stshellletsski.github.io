@@ -1,3 +1,75 @@
+
 body {
+    background-color: lightgray;
+    font-family: karla, monospace;
+    font-size: 16px;
+}
+.component-container {
     background-color: white;
+    width: 100vw;
+    height: 600px;
+    border-radius: 5px;
+    display: inline-block;
+    align-self: center;
+
+
+
+}
+.top-content-container {
+    background-color: white;
+    width: 100vw;
+    position: relative;
+    top: 0px;
+}
+
+.left-content-container {
+    background-color: hsl(179, 62%, 43%);
+    width: 50vw;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+
+.right-content-container {
+    background-color: hsla(179, 62%, 43%, 70%);
+    width: 50vw;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+}
+
+.top-content {
+    width: 100vw;
+    color: hsl(218, 22%, 67%);
+}
+
+.left-content, .right-content {
+    width: 50vw;
+    color: white;
+}
+
+
+
+
+
+.blue-text {
+    color: hsl(179, 62%, 43%);
+}
+.green-text {
+    color: hsl(71, 73%, 54%);
+}
+
+#price {
+    color: white;
+}
+
+#period {
+    display: block;
+}
+
+#period, .right-content p {
+    color: hsl(204, 43%, 93%);
+}
+.left-content, .right-content, .top-content {
+    margin: 10px;
 }
