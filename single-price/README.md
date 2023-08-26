@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![img](./Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/stshellletsski/stshellletsski.github.io/tree/main/single-price)
-- Live Site URL: [Add live site URL here](https://stshellletsski.github.io/single-price/)
+- Solution URL: [https://github.com/stshellletsski/stshellletsski.github.io/tree/main/single-price](https://github.com/stshellletsski/stshellletsski.github.io/tree/main/single-price)
+- Live Site URL: [https://stshellletsski.github.io/single-price/](https://stshellletsski.github.io/single-price/)
 
 ## My process
 
