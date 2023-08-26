@@ -4,13 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
     <title>Web projects landing page</title>
     <style>
-      body { background-color: black; text-align: center;}
-      a { font-size: 16px; color: goldenrod;}
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      body { background-color: black; font-size: 16px; height: 100vh; display: flex; justify-content: center; align-items: center;}
+      a { color: goldenrod; opacity: 80%;}
+      ul {
+        list-style-type: none;
+        text-align: center;
+      }
+      #menu-card {
+        border: 2px solid goldenrod;
+        border-radius: .3rem;
+        background-color: transparent;
+        width: 20rem;
+        height: 40rem;
+        position: relative;
+      }
+      li {
+        padding-top: 1rem;
+        font-family: monospace;
+      }
+      #menu-title {
+        color: goldenrod;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-family: Qwitcher Grypen;
+        font-weight: 700;
+        font-size: 3rem;
+        text-align: center;
+      }
+      #menu-header-container {
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        border-bottom: 2px solid goldenrod;
+      }
+      
     </style>
   </head>
   <body>
-    <a href="./single-price/index.html">Single price component</a>
+    <main>
+      <div id="menu-card">
+        <div id="menu-header-container">
+          <h2 id="menu-title">Selection of Dishes:</h2>
+        </div>
+        <ul>
+          <li>
+            <a href="./single-price/index.html">Single price component</a>
+          </li>
+          <li>
+            <a href="./qr-code/index.html">QR code card</a>
+          </li>
+        </ul>
+      </div>
+    </main>
   </body>
 </html>
