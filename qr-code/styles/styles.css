@@ -1,0 +1,96 @@
+body, background, main, card, container {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+html {
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    height: 100dvh;
+    width: 100dvw;
+    min-height: fit-content;
+    min-width: fit-content;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-family: 'Outfit', sans-serif;
+    
+
+}
+
+background {
+    display: flex;
+    min-height: 100dvh;
+    min-width: 100%;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
+
+/* QR card */
+
+card {
+    background-color: white;
+    border-radius: 1.5rem;
+    border: 2px solid yellow;
+    height: 33.2rem;
+    width: 21.4rem;
+    padding: 1rem;
+}
+
+container {
+    width: 100%;
+}
+
+.qr-container {
+    height: 61.74%;
+    background-color: rgb(29, 107, 196);
+    border-radius: 0.7rem;
+    overflow: hidden;
+
+
+
+}
+
+.qr-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+    
+}
+
+.cta-container {
+    height: 38.26%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.black-h1 {
+    height: 50%;
+    width: 100%;
+    /* text-align: center; */
+    font-size: 1.5rem;
+    margin: 0;
+    
+
+}
+
+.instruction    {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
