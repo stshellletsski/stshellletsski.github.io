@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/styles.css">
   
@@ -18,43 +18,43 @@
   </style>
 </head>
 <body>
-  <div id="root-container">
-    
-    <div id="top-content-container">
-      <h2 class="top-content-header">Join our community</h2>
-      <h3 class="top-content-subheader">30-day, hassle-free money back guarantee</h3>
-      <ul class="top-content-list">
-        <li>Gain access to our full library of tutorials along with expert code reviews.</li>
-        <li>Perfect for any developers who are serious about honing their skills.</li>
-      </ul>
-    </div>
-    
-    <div id="left-content-container">
-      <p class="left-content-header">Monthly Subscription</p>
-      <div class="left-content-price">$29</div>
-      <div class="left-content-period">per month</div>
-      <p class="left-content-paragraph">Full access for less than $1 a day</p>
-      <div onclick="alert('works')" class="left-content-button">Sign Up</div>
-    </div>
-    
-    <div id="right-content-container">
-      <p class="right-content-header">Why Us</p>
-      <ul class="right-content-list">
-        <li>Tutorials by industry experts</li>
-        <li>Peer & expert code review</li>
-        <li>Coding execises</li>
-        <li>Access to out GitHub repos</li>
-        <li>Community forum</li>
-        <li>Flashcard decks</li>
-        <li>New videos every week</li>
-      </ul>
-    </div>
+  <!-- wrapper-block needed to display footer underneath main component -->
+  <div id="wrapper-block"> 
+    <main id="root-container">
+      <div id="top-content-container">
+        <h1 class="top-content-header">Join our community</h1>
+        <h2 class="top-content-subheader">30-day, hassle-free money back guarantee</h2>
+        <ul class="top-content-list">
+          <li>Gain access to our full library of tutorials along with expert code reviews.</li>
+          <li>Perfect for any developers who are serious about honing their skills.</li>
+        </ul>
+      </div>      
+      <div id="left-content-container">
+        <h2 class="left-content-header">Monthly Subscription</h2>
+        <div class="left-content-price">$29</div>
+        <div class="left-content-period">per month</div>
+        <p class="left-content-paragraph">Full access for less than $1 a day</p>
+        <div onclick="alert('works')" class="left-content-button">Sign Up</div>
+      </div>
+      <div id="right-content-container">
+        <h2 class="right-content-header">Why Us</h2>
+        <ul class="right-content-list">
+          <li>Tutorials by industry experts</li>
+          <li>Peer & expert code review</li>
+          <li>Coding execises</li>
+          <li>Access to out GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/stshellletsski" target="_blank">Marcin Strzelecki</a>.
+      </p>
+    </footer>
   </div>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/stshellletsski" target="_blank">Marcin Strzelecki</a>.
-    </p>
-  </footer>
 </body>
 </html>

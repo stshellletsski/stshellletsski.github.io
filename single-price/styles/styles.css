@@ -67,7 +67,7 @@
     }
 }
 
-div, h2, h3, p, ul, li {
+body, main, div, h1, h2, h3, p, ul, li {
     padding: 0px;
     margin: 0px;
 }
@@ -103,6 +103,15 @@ body {
     background-color: hsl(204, 43%, 93%);
     font-family: karla, monospace;
     font-size: 16px;
+    display: flex;
+    min-height: 100dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper-block {
+    width: fit-content;
+    height: fit-content;
 }
 
 #root-container {
