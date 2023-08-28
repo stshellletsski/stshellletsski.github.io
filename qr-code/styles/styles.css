@@ -6,22 +6,21 @@ body, background, main, card, container {
     display: block;
     text-align: center;
 }
+
 html {
     font-size: 15px;
 }
 
 body {
-    display: flex;
     height: 100dvh;
     width: 100dvw;
     min-height: fit-content;
     min-width: fit-content;
+    display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
     font-family: 'Outfit', sans-serif;
-    
-
 }
 
 background {
@@ -54,17 +53,12 @@ container {
     background-color: rgb(29, 107, 196);
     border-radius: 0.7rem;
     overflow: hidden;
-
-
-
 }
 
 .qr-container img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    
-    
+    object-fit: cover;  
 }
 
 .cta-container {
@@ -74,23 +68,25 @@ container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
 .black-h1 {
     height: 50%;
     width: 100%;
-    /* text-align: center; */
     font-size: 1.5rem;
     margin: 0;
-    
-
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
 }
 
 .instruction    {
     height: 50%;
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin: 0;
+    display: block;
+    opacity: 50%;    
 }
 
