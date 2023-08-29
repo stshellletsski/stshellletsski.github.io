@@ -1,4 +1,4 @@
-body, background, main, card, container, p, h1, footer, a {
+body, bg, main, card, container, p, h1, footer, a {
     box-sizing: border-box;
     margin: 0rem;
     padding: 0rem;
@@ -20,7 +20,7 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
-background {
+bg {
     min-height: 100dvh;
     min-width: 100%;
     background-color: hsl(212, 45%, 89%);
@@ -29,7 +29,7 @@ background {
     -moz-box-shadow: 0.75rem 0.75rem 1.65rem -1.65rem rgba(0,0,0,0.6);
 }
 @media screen and (min-width: 781px) {
-    background {
+    bg {
         min-height: 85dvh;    
         min-width: 90dvw;
     } 
