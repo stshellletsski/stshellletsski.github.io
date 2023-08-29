@@ -1,4 +1,4 @@
-body, .section, main, card, container, p, h1, footer, a {
+body, main, section, div, p, h1, footer, a {
     box-sizing: border-box;
     margin: 0rem;
     padding: 0rem;
@@ -20,7 +20,7 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
-.section {
+.background {
     min-height: 100dvh;
     min-width: 100%;
     background-color: hsl(212, 45%, 89%);
@@ -29,7 +29,7 @@ body {
     -moz-box-shadow: 0.75rem 0.75rem 1.65rem -1.65rem rgba(0,0,0,0.6);
 }
 @media screen and (min-width: 781px) {
-    .section {
+    .background {
         min-height: 85dvh;    
         min-width: 90dvw;
     } 
@@ -38,7 +38,7 @@ body {
 
 /* QR card */
 
-card {
+.qr-card {
     background-color: hsl(0, 0%, 100%);
     border-radius: 1.5rem;
     height: 33.2rem;
@@ -49,7 +49,7 @@ card {
     -moz-box-shadow: 0.75rem 0.75rem 1.65rem -1.65rem rgba(0,0,0,0.6);
 }
 
-container {
+section {
     width: 100%;
 }
 
