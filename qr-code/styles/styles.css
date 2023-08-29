@@ -13,15 +13,10 @@ body, background, main, card, container, p, h1, footer, a {
 html {
     font-size: 15px;
 }
-@media screen and (min-width: 550px) {
-    html { font-size: 13.5px; }    
-}
 
 body {
     min-height: 100dvh;
     min-width: 100dvw;
-    height: fit-content;
-    width: fit-content;
     font-family: 'Outfit', sans-serif;
 }
 
@@ -29,7 +24,17 @@ background {
     min-height: 100dvh;
     min-width: 100%;
     background-color: hsl(212, 45%, 89%);
+    box-shadow: 0.75rem 0.75rem 1.65rem -1.65rem rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0.75rem 0.75rem 1.65rem -1.65rem rgba(0,0,0,0.6);
+    -moz-box-shadow: 0.75rem 0.75rem 1.65rem -1.65rem rgba(0,0,0,0.6);
 }
+@media screen and (min-width: 781px) {
+    background {
+        min-height: 85dvh;    
+        min-width: 90dvw;
+    } 
+}
+
 
 /* QR card */
 
@@ -39,6 +44,9 @@ card {
     height: 33.2rem;
     width: 21.4rem;
     padding: 1rem;
+    box-shadow: 0.75rem 0.75rem 1.65rem -1.65rem rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0.75rem 0.75rem 1.65rem -1.65rem rgba(0,0,0,0.6);
+    -moz-box-shadow: 0.75rem 0.75rem 1.65rem -1.65rem rgba(0,0,0,0.6);
 }
 
 container {
@@ -65,7 +73,7 @@ container {
 .black-h1 {
     height: 50%;
     width: 87.5%;
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
     font-size: 1.478rem;
     opacity: 80%;    
 }
