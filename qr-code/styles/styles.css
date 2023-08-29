@@ -49,12 +49,10 @@ body {
     -moz-box-shadow: 0.75rem 0.75rem 1.65rem -1.65rem rgba(0,0,0,0.6);
 }
 
-section {
-    width: 100%;
-}
 
 .qr-container {
     height: 62.18%;
+    width: 100%;
     border-radius: 0.75rem;
     overflow: hidden;
 }
@@ -67,6 +65,7 @@ section {
 
 .cta-container {
     height: 37.82%;
+    width: 100%;
     background-color: transparent;
 }
 
