@@ -99,6 +99,7 @@ main {
     background-color: hsl(158, 36%, 37%);
     border-radius: 0.6rem;
 }
+
 .purchase-button:hover {
     background-color:hsl(158, 36%, 22%);
     cursor: pointer;
