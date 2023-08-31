@@ -1,0 +1,117 @@
+body, main, section, p, h1, div {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+html {
+    font-size: 14px;    
+}
+
+body {
+    min-width: 100dvw;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-width: 24.5rem;
+    min-height: 43.6rem;
+    width: 24.5rem;
+    height: 43.7rem;
+    background-color: white;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.product-image-container {
+    height: 39.2%;
+    background-color: black;
+}
+
+.mobile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 85%;
+}
+
+.product-description-container {
+    display: flex;
+    flex-direction: column;
+    height: 60.8%;
+    background-color: white;
+    padding: 1.7rem;
+}
+
+.product-category {
+    letter-spacing: 0.4rem;
+    opacity: 55%;
+    font-size: 0.8rem;
+}
+
+.product-name {
+    font-family: 'Fraunces', serif;
+    font-size: 2.3rem;
+    padding-top: 1rem;
+    opacity: 85%;
+    line-height: 2.28rem;
+    letter-spacing: -0.006rem;
+}
+
+.product-description {
+    padding-top: 1.12rem;
+    line-height: 1.65rem;
+    opacity: 55%; 
+}
+
+.price-container {
+    display: flex;
+    padding-top: 1.45rem;
+}
+.current-price {
+    padding-right: 1.4rem;
+    font-size: 2.3rem;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.rrp {
+    text-decoration-line: line-through;
+    font-size: 0.9rem;
+    opacity: 55%;
+    align-self: center;
+}
+
+.purchase-button {
+    margin-top: 1.1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 3.5rem;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 0.6rem;
+}
+.purchase-button:hover {
+    background-color:hsl(158, 36%, 22%);
+    cursor: pointer;
+}
+
+.button-cart-image {
+    object-fit: scale-down;
+    align-self: center;
+}
+
+.button-text {
+    padding-left: 0.9rem;
+    color: white;
+    align-self: center;
+    font-weight: 700;
+}
