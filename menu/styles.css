@@ -44,3 +44,21 @@ a {
     border: 2px solid white;
     color: white;
 }
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.menu-container > div {
+    width: 48dvw;
+    max-width: 600px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+
+}
