@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>separator-page</title>
+    <style> 
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #1c1b18;
+            font-size: 16px;
+            height: 100dvh;
+            width: 100dvw;
+	    min-width: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }   
+    </style>
+</head>
+<body>
+<form>
+    <input type="text" name="title" id="title-new">
+    <button type="button">New Title</button>
+</form>
+<script>
+    let title = document.querySelector("title");
+    let submit = document.querySelector("button");
+    submit.onclick = titleChange;
+    function titleChange() {
+        title.innerHTML = document.querySelector("input").value;
+    }   
+</script>  
+</body>
+</html>
