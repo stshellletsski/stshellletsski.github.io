@@ -15,14 +15,12 @@
         body {
             background-color: #1c1b18;
             font-size: 16px;
-            height: 100dvh;
-            width: 100dvw;
 	        min-width: 180px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-	    row-gap: 2rem;
+	        row-gap: 2rem;
         }
 	    form {
 		    flex-direction: column;
@@ -36,6 +34,18 @@
 	        margin-top: 10px;
 	        width: 50%;
         }
+
+    #clock {
+        color: #3d3d3d;
+        font-size: calc(2rem + 2.5vw);
+		text-align: center;
+        margin-top: 2rem;
+    }
+
+    #title-new {
+        background-color: #f0f0f0;
+    }
+
 	#reminder {
 		color: goldenrod;
 		width: 50vw;
@@ -43,10 +53,12 @@
 	}
     footer > p {
         color:#3d3d3d;
+        text-align: center;
     }  
     </style>
 </head>
 <body>
+    <p id="clock">TIMER</p>
     <p id="reminder">Have a great day partner!</p>
     <form>
         <input type="number" name="title" id="title-new">
@@ -63,10 +75,11 @@
         let title = document.querySelector("title");
         let buttonStart = document.getElementById("setTimer");
         let buttonEnd = document.getElementById("cancelTimer");
-	let input = document.querySelector("input");
+	    let input = document.querySelector("input");
+	    let reminder = document.getElementById("reminder");
+        let clock = document.getElementById("clock")
         let timeLeft;
         let timerId;
-	let reminder = document.getElementById("reminder");
         buttonStart.addEventListener("click", settingTimer);
         buttonEnd.addEventListener("click", resetTimer);
 
@@ -82,11 +95,13 @@
             let minutes = Math.floor(timeLeft/60);
             let seconds = timeLeft - minutes * 60;  
             if (minutes === 0 && seconds === 0) {
+            title.innerHTML = "-- 0 : 0 --";
             alert("Time is up!");
             clearInterval(timerId);
             timerId = null;        
             } else {
                 title.innerHTML = `-- ${minutes} : ${seconds} --`;
+                clock.innerHTML = title.innerHTML;
                 timeLeft--;    
             }
         }
