@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer-page</title>
+    <link rel="icon" type="image/x-icon" href="./assets/clock.png">
+    <style> 
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+	html {font-family: monospace;}
+        body {
+            background-color: #1c1b18;
+            font-size: 16px;
+            height: 100dvh;
+            width: 100dvw;
+	        min-width: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+	    row-gap: 2rem;
+        }
+	    form {
+		    flex-direction: column;
+		    display: flex;				
+	    }
+	    div {
+		    display: flex;
+		    flex-direction: row;
+	    }
+        button {
+	        margin-top: 10px;
+	        width: 50%;
+        }
+	#reminder {
+		color: goldenrod;
+		width: 50vw;
+		text-align: center;
+	}
+    footer > p {
+        color:#3d3d3d;
+    }  
+    </style>
+</head>
+<body>
+    <p id="reminder">Have a great day partner!</p>
+    <form>
+        <input type="number" name="title" id="title-new">
+        <div>
+            <button type="button" id="setTimer">Set Timer</button>
+            <button type="button" id="cancelTimer">Cancel Timer</button>
+        </div> 
+    </form>
+    <footer>
+	<p>Coded in notepad like it's 1999. Question yourself, question reality.</p>
+    </footer>
+
+    <script>
+        let title = document.querySelector("title");
+        let buttonStart = document.getElementById("setTimer");
+        let buttonEnd = document.getElementById("cancelTimer");
+	let input = document.querySelector("input");
+        let timeLeft;
+        let timerId;
+	let reminder = document.getElementById("reminder");
+        buttonStart.addEventListener("click", settingTimer);
+        buttonEnd.addEventListener("click", resetTimer);
+
+        function settingTimer() {
+            clearInterval(timerId);
+            timerId = null;
+            timeLeft = input.value * 60;
+            timerId = setInterval(titleTimer, 1000);
+	    reminder.innerHTML = `That's ${mtl(input.value)}% of your conscious life* if you do it daily. Your time is the most valuable resource you can ever have, invest it wisely.`
+        }
+
+        function titleTimer() {
+            let minutes = Math.floor(timeLeft/60);
+            let seconds = timeLeft - minutes * 60;  
+            if (minutes === 0 && seconds === 0) {
+            alert("Time is up!");
+            clearInterval(timerId);
+            timerId = null;        
+            } else {
+                title.innerHTML = `-- ${minutes} : ${seconds} --`;
+                timeLeft--;    
+            }
+        }
+
+        function resetTimer() {
+            clearInterval(timerId);
+            timerId = null;
+            title.innerHTML = "Set Timer";
+	    reminder.innerHTML = "Have a great day partner!"
+        }
+	
+	function mtl(min) {
+  	    let accumulated = min * 365 * 81;
+    	    let constant = 60 * 17 * 365 * 81;
+    	    return ((accumulated / constant) * 100).toPrecision(3); 
+	}
+    </script>  
+</body>
+</html>
