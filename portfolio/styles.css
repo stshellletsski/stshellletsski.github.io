@@ -41,7 +41,7 @@ body {
     height: 25dvw;
 }
 
-/* f and ocus */
+/* f and ocused */
 #fGrid {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -177,7 +177,6 @@ body {
     justify-content: start;
     align-items: center;
     column-gap: 1rem;
-    margin-right: 1rem;
 }
 
 #s1-l2_2-l3_1-l4_2 > a > img {
@@ -195,6 +194,7 @@ body {
     column-gap: calc(2vw);
     padding-left:  calc(0.25 * 25vw);
     margin-bottom: 2rem;
+    margin-right: 1rem;
 }
 
 .sectionWrapperColumn {
@@ -229,7 +229,6 @@ body {
     column-gap: calc(1rem);
     max-width: 40rem;
     align-self: stretch;
-    margin-right: 1rem;
 }
 
 #s2-l2_2-l3_2 {
@@ -242,7 +241,6 @@ body {
 .pWrapperMax40 {
     display: block;
     max-width: 40rem;
-    margin-right: 1rem;
 }
 
 /* s2 layer 4 */
@@ -263,7 +261,6 @@ body {
     align-items: center;
     max-width: 40rem;
     row-gap: 1rem;
-    margin-right: 1rem;
     border-top: 1px solid #707070;
 }
 
