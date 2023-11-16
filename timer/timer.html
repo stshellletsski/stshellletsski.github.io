@@ -96,6 +96,7 @@
             let seconds = timeLeft - minutes * 60;  
             if (minutes === 0 && seconds === 0) {
             title.innerHTML = "-- 0 : 0 --";
+            clock.innerHTML = title.innerHTML;
             alert("Time is up!");
             clearInterval(timerId);
             timerId = null;        
