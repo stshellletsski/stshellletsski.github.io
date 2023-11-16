@@ -203,7 +203,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: calc(1rem + 0.5vw);
+    row-gap: calc(0.3rem + 0.3vw);
     max-width: 40rem;
 }
 
