@@ -153,6 +153,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     column-gap: calc(2rem);
+    row-gap: 1rem;
     flex-wrap: wrap;
 }
 
