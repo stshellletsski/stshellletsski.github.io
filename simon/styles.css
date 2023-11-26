@@ -83,6 +83,7 @@ a {
     background: linear-gradient(90deg, red, limegreen, yellow, blue, red);
     animation: glowing 10s linear infinite alternate;
     background-clip: text;
+    -webkit-background-clip: text;
     background-size: 1200%;
     opacity: 70%;
 
