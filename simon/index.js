@@ -8,6 +8,10 @@ let instructions = document.querySelector("h1");
 let lostGame = false;
 let gameOverInterval;
 const gameOverTimeout = [];
+    // bg music
+    introMusic.play();
+    introMusic.loop = true;
+    introMusic.volume = 0.1;
 start();
 
 // 1) start page
@@ -15,12 +19,7 @@ start();
 // add bg music Credit: https://www.FesliyanStudios.com Background Music: Boss Time
 function start () {
     document.addEventListener("keydown", startGame);
-    tile[0].addEventListener("click", startGame);
-    
-    // bg music
-    introMusic.play();
-    introMusic.loop = true;
-    introMusic.volume = 0.1;
+    tile[0].addEventListener("click", startGame);    
 }
 
 // 1a removal of listeners and processing further
@@ -51,6 +50,7 @@ function setup () {
 
 // 3) game play
 function gamePlay() {
+    tile.forEach(addClick);
     levelDisplay();
     sequenceGenerator();
 }
@@ -69,11 +69,10 @@ function validator (registeredTileIndex) {
     if (Number(registeredTileIndex) === sequence[clickCounter]) {
         clickCounter++;   
     } else {
+        lostGame = true;
         playSound(4);
         zonk();
-        lostGame = true;
-        gameOver();
-        gameOverInterval = setInterval(()=>{gameOver();}, 8000); 
+        gameOver(); 
     }
 
     if(clickCounter === sequence.length) {
@@ -86,12 +85,11 @@ function validator (registeredTileIndex) {
 function reset () {
     clickCounter = 0;
     sequence.splice(0);
-    lostGame = false;
-    clearInterval(gameOverInterval);
     for (let i = 0; i < gameOverTimeout.length; i++) {
         clearTimeout(gameOverTimeout[i]);
     }
     setTimeout(()=>{gamePlay()}, 800); 
+    lostGame = false;
 }
 
 // game over
@@ -99,7 +97,7 @@ function gameOver () {
     let text1 = '<span class = "glowing">Game Over!</span>';
     let text2 = 'tap <span class="glowing">any</span> tile to play again';
     gameOverTimeout[0] = setTimeout(()=>{instructions.innerHTML = text1;}, 0);  
-    gameOverTimeout[1] = setTimeout(()=>{instructions.innerHTML = text2;}, 4000);
+    gameOverTimeout[1] = setTimeout(()=>{instructions.innerHTML = text2;}, 8000);
 }
 
 // click listener
@@ -109,7 +107,9 @@ function clickListener (click) {
     playSound(tileElement2Index(click.target));
     
     if(lostGame) {
+        tile.forEach(removeClick);
         reset();
+
     } else {
         validator(tileElement2Index(click.target));
     }    
@@ -124,6 +124,17 @@ function tileElement2Index (tileElement) {
 function setUpTile (tileElement) {
     tileElement.addEventListener("click", clickListener);
     tileSounds.push(new Audio(sounds[tileElement2Index(tileElement)]));
+}
+
+// remove  click event listener
+function removeClick (tileElement) {
+    tileElement.removeEventListener("click", clickListener);
+}
+
+// add click event listener
+function addClick (tileElement) {
+    tileElement.addEventListener("click", clickListener);
+
 }
 
 // level display
@@ -154,6 +165,7 @@ function clickAnimation (tileElement) {
 
 // play sound
 function playSound(tileIndex) {
+    tileSounds[tileIndex].load();
     tileSounds[tileIndex].play();
 }
 
