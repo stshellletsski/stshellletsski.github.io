@@ -31,6 +31,17 @@ HTML - not much here. Still struggling with correct understanding of semantic ht
 CSS - I wanted to practice grid the most as I previously used only flex box model in my projects. I have learned that grid is capable of creating advanced layouts with minimal structural investment of containers, but lacks flex-ibility. I practised gradients animation and I am especially proud of my glowing words.
 I have invested a good few hours on CSS.
 
-JavaScript - I always claimed to be better at functionality than visual design. This project was a challenge. 
+JavaScript - I always claimed to be better at functionality than visual design. This project was a challenge. If I have done it again, I would have:
+- Design and model whole logic first - my overconfidence caused me a headache. I underestimated the complexity of the project and limitations of JS.
+- Not used globals.
+- Better and cleaner design means better functional programming
+- First make it work, than make it work better Stupid! 
 
-!WIP!
+Summarising, I made a lot of mistakes, wasted ton of time, but such is the learning curve.
+
+### Who helped you?
+Whole coding was done by me, click sounds were provided for the project, background music: https://www.FesliyanStudios.com, title: Boss Time
+Others worth mentioning: My daughter for always believing in me, my wife for not interrupting too much, Piotr for being good friend.
+
+### How can I contact you?
+stshellletsski@gmail.com
